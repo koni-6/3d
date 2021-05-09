@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-  <script
-      type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
 
-  </script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D model</title>
+  <link rel="stylesheet" href="style.min.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
 
-    <model-viewer
-    ar
-    alt="raiyon_l2"
-    src="raiyon_l2.glb"
-    ios-src="raiyon_l2.usdz"
+<body>
+  <model-viewer class="model-viewer" ar alt="raiyon" src="raiyon_l2.glb" ios-src="raiyon_l2.usdz"
+    background-color="#70BCD1" shadow-intensity="0.7" camera-controls interaction-prompt="auto" auto-rotate ar
+    magic-leap>
+  </model-viewer>
+  <div class="title">
+    <h1>raiyon</h1>
+  </div>
 
-    style="width:800px;height:1000px;"
+</body>
 
-    background-color="#70BCD1"
-    shadow-intensity="0.7"
-    camera-controls
-    interaction-prompt="auto"
-    auto-rotate ar magic-leap>
-
-
-    </model-viewer>
-  </body>
 </html>
+  
